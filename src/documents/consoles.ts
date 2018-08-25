@@ -12,11 +12,11 @@ export function collection(ctx: Context) {
     title: 'List of video game consoles',
   };
   const consoles = consoleModel.getAll();
-  for(const console of consoles) {
+  for (const vgconsole of consoles) {
 
     ctx.response.body._links.item.push({
-      href: '/consoles/' + console.id,
-      title: console.name,
+      href: '/consoles/' + vgconsole.id,
+      title: vgconsole.name,
     });
 
   }
@@ -32,15 +32,15 @@ export function item(ctx: Context) {
 }
 
 
-function generateItem(console: consoleModel.Console) {
+function generateItem(vgconsole: consoleModel.Console) {
 
   return {
     _links: {
-      self: { href: '/consoles/' + console.id },
+      self: { href: '/consoles/' + vgconsole.id },
       collection: { href: '/consoles' },
     },
-    title: console.name,
-    release: console.release
+    title: vgconsole.name,
+    release: vgconsole.release
   };
 
 }

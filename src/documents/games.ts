@@ -1,6 +1,6 @@
 import { Context } from '@curveball/core';
-import * as gameModel from '../models/games';
 import csvStringify from 'csv-stringify';
+import * as gameModel from '../models/games';
 
 export function collection(ctx: Context) {
 
@@ -33,9 +33,9 @@ function halCollection(ctx: Context) {
       item: []
     },
   };
-  const page = ctx.request.query.page ? parseInt(ctx.request.query.page, 10)-1 : 0;
+  const page = ctx.request.query.page ? parseInt(ctx.request.query.page, 10) - 1 : 0;
   const games = gameModel.getPage(ctx.request.query.q, page);
-  for(const game of games.data) {
+  for (const game of games.data) {
 
     ctx.response.body._links.item.push({
       href: '/games/' + game.id,
@@ -59,7 +59,7 @@ async function csvCollection(ctx: Context) {
 
   ctx.response.type = 'text/csv';
   ctx.response.headers.set(
-    'Link', [ 
+    'Link', [
       '</games>; rel="alternate"; type="application/hal+json"',
     ]
   );

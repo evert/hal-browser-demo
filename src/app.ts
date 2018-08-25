@@ -1,9 +1,9 @@
 import { Application } from '@curveball/core';
 import router from '@curveball/router';
-import home from './documents/home';
+import halBrowser from 'hal-browser';
 import * as consoleController from './documents/consoles';
 import * as gameController from './documents/games';
-import halBrowser from 'hal-browser';
+import home from './documents/home';
 
 const app = new Application();
 
@@ -26,4 +26,6 @@ app.use(router('/consoles', consoleController.collection));
 app.use(router('/consoles/:id', consoleController.item));
 
 app.listen(4000);
+
+// tslint:disable
 console.log('Listening on port 4000');

@@ -30,7 +30,7 @@ export type Console = {
   id: string,
   name: string,
   release: number
-}
+};
 
 export function getAll() {
   return data;

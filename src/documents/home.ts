@@ -1,6 +1,6 @@
 import { Context } from '@curveball/core';
 
-export default function (ctx: Context) {
+export default function(ctx: Context) {
 
   const browserVersion = require('hal-browser/package.json').version;
 
