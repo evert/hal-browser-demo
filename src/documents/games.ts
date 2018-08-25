@@ -98,7 +98,7 @@ function generateItem(game: gameModel.Game) {
     _links: {
       self: { href: '/games/' + game.id },
       collection: { href: '/games' },
-      console: { href: '/console/' + game.console.id },
+      console: { href: '/consoles/' + game.console.id, title: game.console.name },
     },
     title: game.name,
     publisher: game.publisher,
