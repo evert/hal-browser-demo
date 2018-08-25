@@ -20,7 +20,7 @@ export default function (ctx: Context) {
 
 You're looking at a live demo of [hal-browser][1].
 
-The HAL-Browser is a tool written in TypexScript that can sit in front of a
+The HAL-Browser is a tool written in TypeScript that can sit in front of a
 HAL API and automatically turn HAL responses in an easy-to-use web interface.
 
 It does so by inspecting the \`Accept\` header to see if the client requested
@@ -38,6 +38,8 @@ by looking at things such as:
 
 * The HTTP \`Link:\` header and the HAL \`_link\` object.
 * \`title\` and \`name\` properties in responses.
+* \`Title\` HTTP header.
+* \`_embedded\` HAL object.
 * Specific link relationships, including:
   * alternate
   * author
