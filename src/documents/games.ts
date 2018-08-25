@@ -11,6 +11,10 @@ export function collection(ctx: Context) {
       search: {
         href: '/games{?q}',
         templated: true,
+      },
+      alternate: {
+        href: '/games/?format=csv',
+        type: 'text/csv',
       }
     },
     title: 'List of video games',

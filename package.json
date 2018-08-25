@@ -53,6 +53,7 @@
   "dependencies": {
     "@curveball/core": "^0.4.3",
     "@curveball/router": "0.0.1",
-    "hal-browser": "^0.4.1"
+    "csv-parse": "^2.5.0",
+    "hal-browser": "^0.5.1"
   }
 }

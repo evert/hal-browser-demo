@@ -7,7 +7,18 @@ import halBrowser from 'hal-browser';
 
 const app = new Application();
 
-app.use(halBrowser());
+app.use(halBrowser({
+  defaultLinks: [
+    {
+      rel: 'home',
+      href: '/',
+    },
+    {
+      rel: 'code-repository',
+      href: 'https://github.com/evert/hal-browser-demo',
+    }
+  ]
+}));
 app.use(router('/', home));
 app.use(router('/games', gameController.collection));
 app.use(router('/games/:id', gameController.item));
