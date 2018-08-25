@@ -19,3 +19,10 @@ lint-fix:
 .PHONY:watch
 watch:
 	tsc --watch
+
+.PHONY:run
+run: build
+	node dist/app.js
+
+package-lock.json: package.json
+	npm i
