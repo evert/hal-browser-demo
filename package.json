@@ -1,7 +1,7 @@
 {
-  "name": "@curveball/new-package",
+  "name": "hal-browser-demo",
   "version": "0.0.1",
-  "description": "Description goes here",
+  "description": "HAL browser live demo",
   "main": "dist/index.js",
   "scripts": {
     "prepublish": "make build",
@@ -10,35 +10,35 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/curveballjs/new-package.git"
+    "url": "git+https://github.com/evert/hal-browser-demo"
   },
   "files": [
-    "package.json",
     "README.md",
     "dist",
     "LICENSE"
   ],
   "keywords": [
+    "hal",
+    "hateoas",
     "http",
-    "framework",
-    "nodejs",
-    "typescript",
-    "push",
-    "http2",
-    "curveball"
+    "typescript"
   ],
   "author": "Evert Pot (https://evertpot.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/curveballjs/new-package/issues"
+    "url": "https://github.com/evert/hal-browser-demo"
   },
-  "homepage": "https://github.com/curveballjs/new-package#readme",
+  "homepage": "https://github.com/evert/hal-browser-demo#readme",
   "devDependencies": {
     "@types/chai": "^4.1.4",
+    "@types/express": "^4.16.0",
+    "@types/highlight.js": "^9.12.3",
+    "@types/markdown-it": "0.0.4",
     "@types/mocha": "^5.2.3",
     "@types/node": "^10.3.6",
     "@types/sinon": "^5.0.1",
     "chai": "^4.1.2",
+    "express": "^4.16.3",
     "mocha": "^5.2.0",
     "nyc": "^12.0.2",
     "sinon": "^6.0.1",
@@ -53,6 +53,7 @@
     ]
   },
   "dependencies": {
-    "@curveball/core": "^0.4.1"
+    "@curveball/core": "^0.4.3",
+    "hal-browser": "^0.4.1"
   }
 }

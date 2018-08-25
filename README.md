@@ -1,22 +1,6 @@
-Curveball New Package
-=====================
+HAL browser Demo
+================
 
-This repository serves as the skeleton for all new [Curveball][1] packages.
+This repository contains a live demo of the [HAL Browser][1] utility.
 
-Installation
-------------
-
-    npm install @curveball/new-package 
-
-
-Getting started
----------------
-
-...
-
-API
----
-
-...
-
-[1]: https://github.com/curveballjs/
+[1]: https://github.com/evert/hal-browser/
