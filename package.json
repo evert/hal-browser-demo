@@ -34,15 +34,15 @@
     "@types/highlight.js": "^9.12.3",
     "@types/markdown-it": "0.0.4",
     "@types/mocha": "^5.2.3",
-    "@types/node": "^10.3.6",
-    "@types/sinon": "^5.0.1",
+    "@types/node": "^10.9.4",
+    "@types/sinon": "^5.0.2",
     "chai": "^4.1.2",
     "mocha": "^5.2.0",
-    "nyc": "^12.0.2",
-    "sinon": "^6.0.1",
+    "nyc": "^13.0.1",
+    "sinon": "^6.3.3",
     "ts-node": "^7.0.0",
     "tslint": "^5.10.0",
-    "typescript": "^2.9.2"
+    "typescript": "^3.0.3"
   },
   "types": "dist/",
   "nyc": {
@@ -51,10 +51,10 @@
     ]
   },
   "dependencies": {
-    "@curveball/core": "^0.4.3",
-    "@curveball/router": "0.0.1",
-    "csv-parse": "^2.5.0",
-    "csv-stringify": "^3.1.1",
-    "hal-browser": "^0.5.2"
+    "@curveball/core": "^0.6.0",
+    "@curveball/router": "0.1.0",
+    "csv-parse": "^3.0.0",
+    "csv-stringify": "^4.0.1",
+    "hal-browser": "^0.5.5"
   }
 }
