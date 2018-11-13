@@ -2,9 +2,9 @@ import { Application } from '@curveball/core';
 import router from '@curveball/router';
 import halBrowser from 'hal-browser';
 import * as consoleController from './documents/consoles';
+import form from './documents/form';
 import * as gameController from './documents/games';
 import home from './documents/home';
-import form from './documents/form';
 import cors from './middleware/cors';
 
 const app = new Application();
