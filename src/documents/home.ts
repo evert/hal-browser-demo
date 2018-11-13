@@ -10,6 +10,7 @@ export default function(ctx: Context) {
       '</games>; rel="games"; title="List of video games"',
       '</consoles>; rel="consoles"; title="List of video game consoles"',
       '<https://evertpot.com>; rel="author"; title="Author"',
+      '</form>; rel="feedback"; title="Submit feedback"',
     ]
   );
 
