@@ -5,6 +5,7 @@ import * as consoleController from './documents/consoles';
 import * as gameController from './documents/games';
 import home from './documents/home';
 import form from './documents/form';
+import cors from './middleware/cors';
 
 const app = new Application();
 
@@ -20,6 +21,9 @@ app.use(halBrowser({
     }
   ]
 }));
+
+app.use(cors());
+
 app.use(router('/', home));
 app.use(router('/games', gameController.collection));
 app.use(router('/games/:id', gameController.item));
