@@ -2,8 +2,8 @@ import { Application } from '@curveball/core';
 import halBrowser from 'hal-browser';
 import cors from './middleware/cors';
 import routes from './routes';
-import preferPush from '@curveball/prefer-push';
 import problem from '@curveball/problem';
+import preferPush from '@curveball/prefer-push';
 
 const app = new Application();
 
