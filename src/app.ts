@@ -2,8 +2,13 @@ import { Application } from '@curveball/core';
 import halBrowser from 'hal-browser';
 import cors from './middleware/cors';
 import routes from './routes';
+import preferPush from '@curveball/prefer-push';
+import problem from '@curveball/problem';
 
 const app = new Application();
+
+app.use(preferPush(app));
+app.use(problem());
 
 app.use(halBrowser({
   defaultLinks: [

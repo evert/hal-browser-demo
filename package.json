@@ -53,6 +53,8 @@
   "dependencies": {
     "@curveball/controller": "^0.1.0",
     "@curveball/core": "^0.8.6",
+    "@curveball/prefer-push": "^0.2.0",
+    "@curveball/problem": "^0.1.0",
     "@curveball/router": "^0.2.1",
     "csv-parse": "^4.4.3",
     "csv-stringify": "^5.3.0",
