@@ -1,5 +1,6 @@
 import router from '@curveball/router';
 
+import AssetController from './assets/controller';
 import ConsoleCollectionController from './consoles/controllers/collection';
 import ConsoleController from './consoles/controllers/item';
 import GameCollectionController from './games/controllers/collection';
@@ -13,5 +14,6 @@ export default [
   router('/consoles/:id', new ConsoleController()),
   router('/games', new GameCollectionController()),
   router('/games/:id', new GameController()),
+  router('/assets/:fileName', new AssetController()),
   router('/form', form),
 ];

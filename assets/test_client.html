@@ -1,0 +1,36 @@
+<html>
+
+  <head>
+
+    <title>Client tester</title>
+    <meta charset="utf-8" />
+
+    <script src="/assets/ketting.min.js"></script>
+
+
+  </head>
+  <body>
+
+    <h1>Ketting client tester</h1>
+
+    <p>
+      See the developer console
+    </p>
+
+    <script>
+
+      (async () => {
+        window.Ketting = window.Ketting.default;
+
+        const k = new Ketting('https://api.evert.dev/consoles');
+        const consoleCollection = k.go('/consoles');
+        for(const cons of consoleCollection.followAll('item')) {
+          console.log('Result for %s', cons.uri);
+          console.log(await cons.get());
+        }
+      })();
+
+    </script>
+      
+  </body>
+</html>

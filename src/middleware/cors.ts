@@ -5,6 +5,8 @@ const allowHeaders = [
   'Content-Type',
   'User-Agent',
   'Authorization',
+  'Prefer',
+  'Prefer-Push',
 ];
 
 export default function(): Middleware {
