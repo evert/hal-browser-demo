@@ -22,7 +22,7 @@ watch:
 
 .PHONY:run
 run: build
-	node dist/app.js
+	node dist/index.js
 
 package-lock.json: package.json
 	npm i

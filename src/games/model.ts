@@ -1,6 +1,6 @@
 import parse from 'csv-parse/lib/sync';
 import fs from 'fs';
-import * as consoles from './consoles';
+import * as consoles from '../consoles/model';
 
 export type Game = {
   id: number,
