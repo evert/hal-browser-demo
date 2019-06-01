@@ -8,7 +8,8 @@ export default class GameItem extends Controller {
   async get(ctx: Context) {
 
     ctx.response.type = 'application/hal+json';
-    const game = gameModel.getById(ctx.state.params.id);
+    const gameId = parseInt(ctx.state.params.id, 10);
+    const game = gameModel.getById(gameId);
     ctx.response.body = hal.item(game); 
 
   }
