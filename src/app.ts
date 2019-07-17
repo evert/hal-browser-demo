@@ -8,7 +8,7 @@ import preferPush from '@curveball/prefer-push';
 const app = new Application();
 
 app.use(preferPush(app));
-app.use(problem());
+
 
 app.use(halBrowser({
   defaultLinks: [
@@ -22,6 +22,7 @@ app.use(halBrowser({
     }
   ]
 }));
+app.use(problem());
 
 app.use(cors());
 
